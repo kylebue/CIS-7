@@ -1,0 +1,18 @@
+ #35: if ((7.2 < 5.0) && (14.4 < 10.7)) || (6 > 5.1)
+ T 1.0
+ F
+ T 2.4
+ T 7.2
+ T 5.3
+ 
+ ANSWER: 1.0, 2.4, 7.2, 5.3
+ 
+ #37:
+ 
+ #38: No it does not because (A^B)' will actually equal false if A and B are both true and therefore not execute statement 1 when wanted
+ 
+ #61: Percival has to be a truth teller because if he is a liar, then he would be telling the truth by his statement, "At least one of us is a liar" because he would be talking about himself which makes at least one liar which is a true statement that he cannot make if he is a liar. This is a contradiction and therefore Percival must be a truth teller. Llewellyn is a liar because that's the only way Percival's statement could be true.
+ 
+ #62: They both have to be truth tellers. If Merlin is a liar, then his statement needed to be false, but it could still be true even if he lied because Meredith could still be a truth teller even if Merlin is a liar which is a contradiction.
+ 
+ #63: They both have to be truth tellers because if Rothwold is a liar, there would be a contradiction in is statement where he would be telling the truth when he says he is a liar because liars always have to lie. The only way for the statement to make sense is 
