@@ -7,7 +7,10 @@
  
  ANSWER: 1.0, 2.4, 7.2, 5.3
  
- #37:
+ #37: if !(Value1 < Value2)
+		statement1
+	  else
+		statement2
  
  #38: No it does not because (A^B)' will actually equal false if A and B are both true and therefore not execute statement 1 when wanted
  
@@ -17,4 +20,10 @@
  
  #63: They both have to be truth tellers because if Rothwold is a liar, there would be a contradiction in is statement where he would be telling the truth when he says he is a liar because liars always have to lie. The only way for the statement to make sense is if they are both truth tellers.
 
- #64: 
+ #64: A^B
+		A  B  A^B
+		T  T  T
+		T  F  F
+		F  T  F
+		F  F  F
+	  They both must be liars. Gwendolin must be a liar because he is calling himself a liar. If he was a truthteller, that would be a contradiction because truthtellers cannot lie and they can't be a liar and a truthteller at the same time. Therefore, Merrilaine must be a liar as well because if Gwendolin said Merrilaine isn't a liar, but she's lying about that, then that must make Merrilaine a liar as well.
