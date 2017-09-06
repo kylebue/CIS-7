@@ -12,7 +12,7 @@
 	  else
 		statement2
  
- #38: No it does not because (A^B)' will actually equal false if A and B are both true and therefore not execute statement 1 when wanted
+ #38: No it does not because (A^B)' will actually equal false if A and B are both true and therefore not execute statement 1 when wanted. It would need to be a tautology in order to work as intended
  
  #61: Percival has to be a truth teller because if he is a liar, then he would be telling the truth by his statement, "At least one of us is a liar" because he would be talking about himself which makes at least one liar which is a true statement that he cannot make if he is a liar. This is a contradiction and therefore Percival must be a truth teller. Llewellyn is a liar because that's the only way Percival's statement could be true.
  
