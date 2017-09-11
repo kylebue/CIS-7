@@ -1,1 +1,18 @@
-Blank for now
+Assignment 4:
+1. Show that p->q and q'->p' are logically equivalent without using truth tables or a "contrapositive" law
+
+- p->q		Given							q'->p'	Given
+- p' v q	Implication rule				q v p'	Implication rule
+Answer: p' v q <=> p' v q	Commutative rule
+
+2. Show that (p->r) ^ (q->r) <=> (p v q) -> r
+
+- (p' v r) ^ (q' v r) <=> (p v q)' v r			Implication rule x3
+- (p' v r) ^ (q' v r) <=> p' ^ q' v r			DeMorgan's Law
+- (p' ^ q' v r) v (r ^ q' v r) <=> p' ^ q' v r 	Distributive rule
+- (p' ^ q' v r) v (r v r ^ q') <=> p' ^ q' v r	Commutative rule
+- (p' ^ q' v r) v (r ^ q') <=> p' ^ q' v r		Identity
+- (p' ^ q' v r v r) ^ q' <=> p' ^ q' v r		Associative rule
+- p' ^ q' v r ^ q' <=> p' ^ q' v r				Identity
+- p' ^ q' ^ q' v r <=> p' ^ q' v r				Commutative
+Answer: - p' ^ q' v r <=> p' ^ q' v r			Identity
