@@ -1,3 +1,64 @@
-﻿1>------ Build started: Project: Assignment 6, Configuration: Debug Any CPU ------
-1>  Assignment 6 -> c:\users\ncc\documents\visual studio 2015\Projects\Assignment 6\Assignment 6\bin\Debug\Assignment 6.exe
-========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment_6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string number = "";
+            int num = 0;
+            bool isEven;
+            int invalidCount = 0;
+
+            while (number != "q")
+            {
+                Console.Write("Enter a number (press 'q' to exit): ");
+                number = Console.ReadLine();
+
+                if (int.TryParse(number, out num))
+                {
+                    num = Convert.ToInt32(number);
+                    isEven = EvenOrOdd(num);
+                    EvenOrOddOutput(isEven, num);
+                }
+                else if (number == "q")
+                    Console.Write("Goodbye!\n\n");
+                else
+                {
+                    if (invalidCount < 2)
+                        Console.Write("Invalid response. Try again.\n\n");
+                    else if (invalidCount >= 2 && invalidCount < 4)
+                        Console.Write("Stop.\n\n");
+                    else if (invalidCount >= 4 && invalidCount < 6)
+                        Console.Write("Please stop.\n\n");
+                    else if (invalidCount >= 6 && invalidCount < 8)
+                        Console.Write("STOP!\n\n");
+                    else if (invalidCount >= 8)
+                        Console.Write("HOW DARE YOU!!!\n\n");
+                    invalidCount++;
+                }
+            }
+        }
+
+        private static bool EvenOrOdd (int num)
+        {
+            if (num % 2 == 0)
+                return true;
+            else
+                return false;
+        }
+
+        private static void EvenOrOddOutput (bool isEven, int num)
+        {
+            if (isEven)
+                Console.Write(num + " is even.\n\n");
+            else
+                Console.Write(num + " is odd.\n\n");
+        }
+    }
+}
