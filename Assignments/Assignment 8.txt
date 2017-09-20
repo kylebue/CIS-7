@@ -1,0 +1,95 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+class Assignment_8
+{
+  static void Main (string[] args)
+  {
+    string userNum = "";
+    string userGuess = "";
+    
+    int num = 0;
+    int guess = 0;
+    int realNumPrimes = 0;
+    
+    bool isValidResponse = false;
+
+    while (userNum != "q")
+    {
+      userNum = "";
+      userGuess = "";
+      num = 0;
+      guess = 0;
+      realNumPrimes = 0;
+      isValidResponse = false;
+      
+      Console.Write("Enter a number (press 'q' to quit): ");
+      userNum = Console.ReadLine();
+      if (int.TryParse(userNum, out num))
+      {
+        num = Convert.ToInt32(userNum);
+        realNumPrimes = CalculateNumPrime(num);
+        
+        while (!isValidResponse)
+        {
+          Console.Write("\nNow guess how many numbers between 0 and that number are prime numbers: ");
+          userGuess = Console.ReadLine();
+          if (int.TryParse(userGuess, out guess))
+          {
+            isValidResponse = true;
+            guess = Convert.ToInt32(userGuess);
+            
+            if (guess == realNumPrimes)
+            {
+              Console.Write("Congrats! You got it!\n\n");
+            }
+            else
+            {
+              Console.Write("Sorry... the real answer is " + realNumPrimes + "\n\n");
+            }
+          }
+          else
+          {
+            Console.Write("That is not a number. Try again.\n");
+          }
+        }
+      }
+      else if (userNum == "q")
+      {
+        Console.Write("Goodbye!\n");
+        break;
+      }
+      else
+      {
+        Console.Write("Incorrect response. Try again.\n\n");
+      }
+    }
+  }
+  
+  private static int CalculateNumPrime (int userNum)
+  {
+    int numPrime = 0;
+    bool isPrime = true;
+    for (int i = 2; i <= userNum; i++)
+    {
+      for (int j = 2; j <= userNum; j++)
+      {
+        if (i != j && i % j == 0)
+        {
+          isPrime = false;
+          break;
+        }
+      }
+      if (isPrime)
+      {
+        numPrime++;
+      }
+      isPrime = true;
+    }
+
+    return numPrime;
+  }
+}
