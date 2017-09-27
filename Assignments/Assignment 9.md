@@ -62,6 +62,38 @@ Assignment 9 Answers:
 
 		Answer: 3m = 3m
 
-###3.	
+###3.	9^n - 1 = 8m
+
+		n=1
+
+		9^1 - 1 = 8m
+
+		9 - 1 = 8m
+
+		8 = 8m
+
+		m=1
+
+		8 = 8(1)
+
+		8 = 8
+
+		Base case is true
+
+		9^n = 8m
+
+		9^(n+1) - 1 = 8m
+
+		9^n * 9 - 1 = 8m
+
+		8m * 9 - 1 = 8m
+
+		8m * 8 = 8m
+
+		8(m * 1) = 8m
+
+		Answer: 8m = 8m
+
+
 
 
