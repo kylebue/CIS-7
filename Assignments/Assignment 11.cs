@@ -10,10 +10,10 @@ namespace Assignment11
     {
         static void Main(string[] args)
         {
-            AskForFirstNum();
+            AskForNums();
         }
 
-        static void AskForFirstNum()
+        static void AskForNums()
         {
             string userNum1 = "";
 
