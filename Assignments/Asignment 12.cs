@@ -110,3 +110,37 @@ namespace Assignment11
     
   }
 }
+
+###OUTPUT###
+Enter a number (press 'q' to quit): 
+ 864
+
+Enter another number: 
+ 68464
+
+Brute force method took: 142200 nanoseconds.
+
+Euclid method took: 1247800 nanoseconds.
+
+The Greatest Common Divisor by brute force is: 16
+
+The Greatest Common Divisor by Euclid is: 16
+
+Enter a number (press 'q' to quit): 
+ 1234567890
+
+Enter another number: 
+ 9876543210
+
+Brute force method took: 17208903300 nanoseconds.
+
+Euclid method took: 253800 nanoseconds.
+
+The Greatest Common Divisor by brute force is: 90
+
+The Greatest Common Divisor by Euclid is: 90
+
+Enter a number (press 'q' to quit): 
+ q
+
+Goodbye!
