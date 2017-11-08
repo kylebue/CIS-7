@@ -14,12 +14,13 @@ class Graph
     bool repeat = true;
     string userInput = "";
     int userNum = 0;
-    int numVertices = 0;
+    List<int> directedGraph = new List<int>();
     int numEdges = 0;
+    
+    //Console.WriteLine("Graph currently contains " + numVertices.Count + " vertices and " + numEdges + " edges\n");
     
     do
     {
-      Console.WriteLine("Graph currently contains " + numVertices + " vertices and " + numEdges + " edges\n");
       Console.WriteLine("What would you like to do?");
       Console.WriteLine("(1) Add a vertex");
       Console.WriteLine("(2) Add an edge");
@@ -33,11 +34,11 @@ class Graph
       
       if (userNum == 1)
       {
-        numVertices = AddVertex(numVertices);
+        directedGraph = AddVertex(directedGraph);
       }
       else if (userNum == 2)
       {
-        numEdges = AddEdge(numEdges);
+        AddEdge(directedGraph);
       }
       else if (userNum == 3)
       {
@@ -55,15 +56,39 @@ class Graph
     } while(repeat);
   }
   
-  static int AddVertex(int vertices)
+  static List<int> AddVertex(List<int> graph)
   {
-    vertices++;
-    return vertices;
+    Vertex vertex = new Vertex();
+    Console.WriteLine("Enter number of vertex:");
+    vertex.name = Console.ReadLine();
+    Console.WriteLine("");
+    
+    graph.Add(int.Parse(vertex.name));
+    return graph;
   }
-  static int AddEdge(int edges)
+  static void AddEdge(List<int> graph)
   {
-    edges++;
-    return edges;
+    
+  }
+  static void HighestDegree()
+  {
+    
+  }
+  static void FindIsolatedVertices()
+  {
+    
+  }
+  static void FindLoops()
+  {
+    
+  }
+  static bool IsConnected()
+  {
+    return false;
+  }
+  static bool IsComplete()
+  {
+    return false;
   }
   static void DisplayGraph()
   {
