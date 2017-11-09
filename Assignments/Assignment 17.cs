@@ -14,10 +14,7 @@ class Graph
     bool repeat = true;
     string userInput = "";
     int userNum = 0;
-    List<int> directedGraph = new List<int>();
-    int numEdges = 0;
-    
-    //Console.WriteLine("Graph currently contains " + numVertices.Count + " vertices and " + numEdges + " edges\n");
+    List<List<int>> matrix = new List<List<int>>();
     
     do
     {
@@ -34,11 +31,11 @@ class Graph
       
       if (userNum == 1)
       {
-        directedGraph = AddVertex(directedGraph);
+        AddVertex(matrix);
       }
       else if (userNum == 2)
       {
-        AddEdge(directedGraph);
+        AddEdge();
       }
       else if (userNum == 3)
       {
@@ -56,17 +53,18 @@ class Graph
     } while(repeat);
   }
   
-  static List<int> AddVertex(List<int> graph)
+  static void AddVertex(List<List<int>> matrix)
   {
-    Vertex vertex = new Vertex();
-    Console.WriteLine("Enter number of vertex:");
-    vertex.name = Console.ReadLine();
-    Console.WriteLine("");
-    
-    graph.Add(int.Parse(vertex.name));
-    return graph;
+    matrix.Add(new List<int>());
+    foreach (var row in matrix)
+    {
+      while (row.Count < matrix.Count)
+      {
+        row.Add(0);
+      }
+    }
   }
-  static void AddEdge(List<int> graph)
+  static void AddEdge()
   {
     
   }
@@ -92,6 +90,8 @@ class Graph
   }
   static void DisplayGraph()
   {
-    // Display graph info
+    Console.WriteLine("Vertex with the highest degree: ");
+    Console.WriteLine("Isolated vertices: ");
+    Console.WriteLine("");
   }
 }
