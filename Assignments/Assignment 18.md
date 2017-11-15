@@ -1,12 +1,12 @@
 ######ASSIGNMENT 18 ANSWERS######
 			
-1.	g(a) = (1,2)
+#1.	g(a) = (1,2)
 
 	g(b) = (1,3)
-	
+
 	g(c) = (2,3)
 
-2.	a)	Yes the graph is simple because there are no parallel looping 			sides
+#2.	a)	Yes the graph is simple because there are no parallel looping 			sides
 
 	b)	No the graph is not complete because you cannot connect any 		node with ever other node
 
@@ -20,4 +20,4 @@
 
 	g)	Yes you can remove a few arcs to make the graph not connected 		(ex. a2, a6)
 
-5.	
+#5.	
