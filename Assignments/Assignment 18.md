@@ -30,4 +30,14 @@
 
 13.	(b) is not isomorphic to the others because it does not contain an 		isolated node with a degree of 0
 
-30.	
+30.	It divides the plane into 8 different regions
+
+49.	The graph consists of n disconnected nodes with a loop at each node 	because the matrix only consists of 1s going down the diagonal 			which means every node is only connected to itself
+
+50.	The graph consists of no connections and only isolated vertices 		since the matrix is all 0s
+
+51.	All nodes in the graph are connected which means the matrix only 		has 0s going down the diagonal with 1s everywhere else
+
+65.	See Drawings for Assignment 18 folder...
+
+71.	The matrix for G' will have 1s where A had 0s and 0s where A had 1s 	except for diagonal elements, which remain 0s
