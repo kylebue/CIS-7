@@ -6,7 +6,7 @@
 
 	g(c) = (2,3)
 
-#2.	a) Yes the graph is simple because there are no parallel looping sides
+2.	a) Yes the graph is simple because there are no parallel looping sides
 
     b) No the graph is not complete because you cannot connect any node with ever other node
 
