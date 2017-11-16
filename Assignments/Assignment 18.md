@@ -2,9 +2,9 @@
 			
 #1.	g(a) = (1,2)
 
-	g(b) = (1,3)
+g(b) = (1,3)
 
-	g(c) = (2,3)
+g(c) = (2,3)
 
 #2.	a) Yes the graph is simple because there are no parallel looping sides
 
