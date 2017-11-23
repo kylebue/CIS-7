@@ -11,8 +11,3 @@ public class Node
   public Node leftChild {get; set;}
   public Node rightChild {get; set;}
 }
-
-
-
-
-https://i.imgflip.com/15c14o.jpg
